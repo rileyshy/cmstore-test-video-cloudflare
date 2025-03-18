@@ -57,18 +57,6 @@ setInterval(typeEffect, 250);
         }
     }
 
-    setInterval(detectDevTools, 1000);
-
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.addEventListener('keydown', e => {
-        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-            window.close();
-        }
-        if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-            e.preventDefault();
-        }
-    });
-})();
 
 const video = document.getElementById('background-video');
 const volumeControl = document.getElementById('volumeControl');
